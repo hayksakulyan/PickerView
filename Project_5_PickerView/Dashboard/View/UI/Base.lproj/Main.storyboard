@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_5_PickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVr-Mk-TEF">
+                                <rect key="frame" x="0.0" y="282" width="393" height="216"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYA-Z4-KJx">
+                                <rect key="frame" x="95" y="59" width="202" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ip9-F0-tDs">
+                                <rect key="frame" x="95" y="130" width="202" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ip9-F0-tDs" secondAttribute="trailing" constant="96" id="8DD-BC-sjQ"/>
+                            <constraint firstItem="RYA-Z4-KJx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.056338" id="HAh-HC-pWb"/>
+                            <constraint firstItem="Ip9-F0-tDs" firstAttribute="top" secondItem="RYA-Z4-KJx" secondAttribute="bottom" constant="23" id="Hdn-v1-sR8"/>
+                            <constraint firstItem="Ip9-F0-tDs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="I3U-If-Kwi"/>
+                            <constraint firstItem="OVr-Mk-TEF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JX8-BM-DxW"/>
+                            <constraint firstItem="OVr-Mk-TEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MUe-eV-Kga"/>
+                            <constraint firstItem="OVr-Mk-TEF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.253521" id="OdB-4t-EVN"/>
+                            <constraint firstItem="OVr-Mk-TEF" firstAttribute="top" secondItem="Ip9-F0-tDs" secondAttribute="bottom" constant="104" id="QT5-Ni-1P8"/>
+                            <constraint firstItem="Ip9-F0-tDs" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.056338" id="WIl-FC-xrr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RYA-Z4-KJx" secondAttribute="trailing" constant="96" id="hbs-dA-b3j"/>
+                            <constraint firstItem="RYA-Z4-KJx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="uVB-NS-OBL"/>
+                            <constraint firstItem="RYA-Z4-KJx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uZB-gy-sKN"/>
+                            <constraint firstItem="Ip9-F0-tDs" firstAttribute="top" secondItem="RYA-Z4-KJx" secondAttribute="bottom" constant="23" id="yv2-t5-4uk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTwo" destination="Ip9-F0-tDs" id="svD-RC-1D7"/>
+                        <outlet property="lblone" destination="RYA-Z4-KJx" id="M1D-Yd-pNs"/>
+                        <outlet property="uiPickerView" destination="OVr-Mk-TEF" id="cem-Id-SuK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
